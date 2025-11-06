@@ -123,7 +123,7 @@ export const FinesManagement = ({ user }: FinesManagementProps) => {
             <Clock className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-2xl font-bold text-red-600">R{(totalPendingFines || 0).toFixed(2)}</div>
+            <div className="text-2xl font-bold text-red-600">UGX{(totalPendingFines || 0).toFixed(2)}</div>
             <p className="text-xs text-muted-foreground">
               {fines.filter(f => f.status === "issued").length} outstanding fines
             </p>
