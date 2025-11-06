@@ -169,7 +169,7 @@ export const FinesManagement = ({ user }: FinesManagementProps) => {
                         <div className="space-y-1">
                           {fine.overdueFine > 0 && (
                             <p className="text-sm font-medium text-orange-600">
-                              Overdue Fine: R{fine.overdueFine.toFixed(2)}
+                              Overdue Fine: UGX{fine.overdueFine.toFixed(2)}
                             </p>
                           )}
                         </div>
@@ -184,7 +184,7 @@ export const FinesManagement = ({ user }: FinesManagementProps) => {
                         <p className="text-sm text-red-600 mt-1">{fine.damageDescription}</p>
                         {fine.damageFine > 0 && (
                           <p className="text-sm font-medium text-red-600 mt-1">
-                            Damage Fine: R{fine.damageFine.toFixed(2)}
+                            Damage Fine: UGX{fine.damageFine.toFixed(2)}
                           </p>
                         )}
                       </div>
@@ -228,7 +228,7 @@ export const FinesManagement = ({ user }: FinesManagementProps) => {
                             onClick={() => handlePayOverdue(fine.id)}
                             className="bg-orange-600 hover:bg-orange-700"
                           >
-                            Pay Overdue (R{fine.overdueFine.toFixed(2)})
+                            Pay Overdue (UGX{fine.overdueFine.toFixed(2)})
                           </Button>
                         )}
                       </>
