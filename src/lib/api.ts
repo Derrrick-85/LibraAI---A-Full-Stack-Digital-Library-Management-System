@@ -106,7 +106,7 @@ export const api = {
 
 // Helper functions
 export const formatCurrency = (amount: number): string => {
-  return `R${amount.toFixed(2)}`;
+  return `UGX{amount.toFixed(2)}`;
 };
 
 export const formatReadingTime = (minutes: number): string => {
