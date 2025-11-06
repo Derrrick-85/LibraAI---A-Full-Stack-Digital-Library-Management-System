@@ -119,7 +119,7 @@ def init_db():
             user_id INTEGER,
             book_id INTEGER,
             amount DECIMAL(10,2) NOT NULL,
-            currency TEXT DEFAULT 'ZAR',
+            currency TEXT DEFAULT 'UGX',
             status TEXT DEFAULT 'completed',
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (user_id) REFERENCES users (id),
