@@ -133,7 +133,7 @@ export const UserDashboard = ({ user, activeTab = "dashboard" }: UserDashboardPr
                 <Clock className="h-4 w-4 text-muted-foreground" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold text-red-600">R{(userStats.totalFines || 0).toFixed(2)}</div>
+                <div className="text-2xl font-bold text-red-600">UGX{(userStats.totalFines || 0).toFixed(2)}</div>
                 <p className="text-xs text-muted-foreground">Outstanding amount</p>
               </CardContent>
             </Card>
