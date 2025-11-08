@@ -149,7 +149,7 @@ export const AdminDashboard = ({ onNavigate, user }: AdminDashboardProps) => {
             <AlertTriangle className="h-4 w-4 text-muted-foreground" />
           </CardHeader>
           <CardContent>
-            <div className="text-3xl font-bold text-red-600 mb-2">R{stats.totalFines.toFixed(2)}</div>
+            <div className="text-3xl font-bold text-red-600 mb-2">UGX{stats.totalFines.toFixed(2)}</div>
             <p className="text-sm text-muted-foreground">
               Outstanding amount from all users. Click to view and manage fines.
             </p>
